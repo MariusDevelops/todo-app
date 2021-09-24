@@ -6,15 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Todo Challenge | Frontend Mentor</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+
+    <div class="img-light"><img src="src/images/bg-desktop-light.jpg" alt="light image"></div>
+
+    <section class="section-center">
+      
+      <!-- header -->
+      <header>
+      <h1>todo</h1>
+      <img id="img-moon" src="src/images/icon-moon.svg" alt="white moon"/>
+      </header>
+
+      <!-- form -->
+      <form class="todo-form">
+        <div class="form-control">
+          <button type="submit" class="submit-btn"></button>
+          <input type="text" id="todo" placeholder="Create a new todo..."/>
+        </div>
+      </form>
+
+      <!-- list -->
+      <div class="todo-container">
+        <div class="todo-list"></div>
+        <button class="clear-btn"></button>
+      </div>
+    </section>
+
+    <!-- choose items -->
 
     <!-- Scripts -->
     <script src="./src/scripts/main.js"></script>
