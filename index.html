@@ -10,36 +10,129 @@
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <title>Todo Challenge | Frontend Mentor</title>
   </head>
-  <body>
 
-    <div class="img-light"><img src="src/images/bg-desktop-light.jpg" alt="light image"></div>
+  <body class="theme-dark">
 
-    <section class="section-center">
+    <!--<div class="img-light"><img src="src/images/bg-desktop-light.jpg" alt="light image"></div>
+    
+      <section class="section-center">-->
       
-      <!-- header -->
-      <header>
-      <h1>todo</h1>
-      <img id="img-moon" src="src/images/icon-moon.svg" alt="white moon"/>
+
+      <!-- HEADER -->
+      <header class="flex-row">
+      <h1>TODO</h1>
+      <!--<img id="img-moon" src="src/images/icon-moon.svg" alt="white moon"/>-->
+      <div class="theme-block">
+        <input type="checkbox" name="theme" id="theme">
+        <label for="theme"></label>
+      </div>
       </header>
 
-      <!-- form -->
+      <main>
+
+      <!-- FIRST INPUT LINE -->
+      <div class="add-new-item flex-row">
+        <span></span>
+        <input type="text" placeholder="Create a new todo..." name="addItem" id="addItem">
+      </div>
+
+      <!-- ALL OTHER LIST INPUTS -->
+      <section class="content">
+        <ul>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem" checked>
+              <span class="checkmark"></span>
+              <span class="text">Tex 1</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem">
+              <span class="checkmark"></span>
+              <span class="text">Text 2</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem">
+              <span class="checkmark"></span>
+              <span class="text">Text 2</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem">
+              <span class="checkmark"></span>
+              <span class="text">Text 2</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem">
+              <span class="checkmark"></span>
+              <span class="text">Text 2</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+          <li class="flex-row">
+            <label class="list-item">
+              <input type="checkbox" name="todoItem">
+              <span class="checkmark"></span>
+              <span class="text">Text 3</span>
+            </label>
+            <span class="remove"></span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- FILTER INPUTS-->
+      <div class="bottom-items flex-row">
+        <div class="items-left"><span>2</span> items left</div>
+
+        <div class="filter flex-row">
+          <label>
+            <input type="radio" name="filter" id="all" checked>
+            <span>All</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="active">
+            <span>Active</span>
+          </label>
+          <label>
+            <input type="radio" name="filter" id="completed">
+            <span>Completed</span>
+          </label>
+        </div>
+
+        <span class="clear">Clear Completed</span>
+      </div>
+
+      </main>
+      
+      
+      <!-- form
       <form class="todo-form">
         <div class="form-control">
           <button type="submit" class="submit-btn"></button>
           <input type="text" id="todo" placeholder="Create a new todo..."/>
         </div>
-      </form>
+      </form> -->
 
-      <!-- list -->
+      <!-- list
       <div class="todo-container">
         <div class="todo-list"></div>
         <button class="clear-btn"></button>
       </div>
-    </section>
+    </section> -->
 
-    <!-- choose items -->
 
-    <!-- Scripts -->
+
+    <!-- SCRIPTS -->
     <script src="./src/scripts/main.js"></script>
   </body>
 </html>
